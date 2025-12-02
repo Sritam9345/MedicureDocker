@@ -24,7 +24,6 @@ class UserModel(BaseModel):
 
 class DiseaseModel(BaseModel):
     
-    user_id: str
-    symtomps: list[str]
-    prognosis: str
-    medication: str
+    user_id: str = "random"
+    symptopms: str
+    prognosis: str = "none"

@@ -9,8 +9,8 @@ parser = SymptomParser()
 encoder = Encoder()
     
     
-def predict(symptomps):
-    parser.parser(symptomps)
+def predict(symptopms):
+    parser.parser(symptopms)
     
     prediction = model.predict(parser.x_test)
     

@@ -1,9 +1,10 @@
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+from config.config import setting
 
-uri =  "mongodb+srv://situnandananda_db_user:smTjhMrSC3wUqcK3@cluster0.qasb1vx.mongodb.net/?appName=Cluster0"
+url =  setting.mongo_url
 
-client = MongoClient(uri, server_api=ServerApi('1'))
+client = MongoClient(url, server_api=ServerApi('1'))
 
 db = client.medicure_db
 
