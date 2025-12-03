@@ -23,4 +23,6 @@ def home():
 
 app.include_router(PredictRouter,prefix='/predict')
 app.include_router(userRouter,prefix='/user')
-    
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", debug=True)

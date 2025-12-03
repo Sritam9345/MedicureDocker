@@ -9,6 +9,7 @@ click==8.3.1
 cloudpathlib==0.23.0
 confection==0.1.5
 cymem==2.0.13
+dnspython==2.8.0
 fastapi==0.122.0
 filelock==3.20.0
 fsspec==2025.10.0
@@ -28,8 +29,12 @@ pandas==2.3.3
 pillow==12.0.0
 preshed==3.0.12
 pydantic==2.12.5
+pydantic-settings==2.12.0
 pydantic_core==2.41.5
+PyJWT==2.10.1
+pymongo==4.15.4
 python-dateutil==2.9.0.post0
+python-dotenv==1.2.1
 pytz==2025.2
 PyYAML==6.0.3
 regex==2025.11.3

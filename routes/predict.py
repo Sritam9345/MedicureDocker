@@ -28,7 +28,7 @@ async def predict_disease(symptoms: DiseaseModel, request: Request):
             return JSONResponse(status_code=401, content={"detail": "Invalid token payload"})
         request.state.user_id = ObjectId(user_id)
     except Exception as e:
-        return JSONResponse(status_code=401, content={"detail": "Invalid Token"})
+        return JSONResponse(status_code=401, content={"detail": f"Invalid{e}"})
    
     symptoms.user_id = getattr(request.state, "user_id", None)
     disease = await predict(symptoms.symptopms)
